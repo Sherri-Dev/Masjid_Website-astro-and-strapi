@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaInfo } from "react-icons/fa//index";
+import { FaInfo } from "react-icons/fa/index";
 
 const Info = ({
   icon,
@@ -47,7 +47,7 @@ const Info = ({
 
 Info.propTypes = {
   title: PropTypes.string,
-  desc: PropTypes.string.isRequired,
+  desc: PropTypes.any,
   href: PropTypes.string,
   onClick: PropTypes.func,
   icon: PropTypes.object.isRequired,

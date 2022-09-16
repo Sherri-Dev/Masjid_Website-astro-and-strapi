@@ -11,6 +11,7 @@ import Info from "../shared/Info";
 import { RiArrowDownSFill } from "react-icons/ri/index";
 import { RiArrowUpSFill } from "react-icons/ri/index";
 import NamazTable from "./NamazTable";
+import SocialIcons from "../shared/socialIcons";
 
 const TopBar = () => {
   const [showTable, setShowTable] = useState(false);
@@ -47,15 +48,7 @@ const TopBar = () => {
           <NamazTable showTable={showTable} />
           <div className="hidden items-center gap-4 text-xs lg:flex">
             Follow us:
-            <a href="#">
-              <FaTwitter className=" cursor-pointer transition-colors duration-700 hover:text-prColor" />
-            </a>
-            <a href="#">
-              <FaFacebookF className=" cursor-pointer transition-colors duration-700 hover:text-prColor" />
-            </a>
-            <a href="#">
-              <FaGooglePlusG className="cursor-pointer text-lg transition-colors duration-700 hover:text-prColor" />
-            </a>
+            <SocialIcons />
           </div>
         </div>
       </div>

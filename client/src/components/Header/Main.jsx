@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCalendarAlt, FaEnvelope, FaListUl } from "react-icons/fa/index";
 import { MdPhoneInTalk } from "react-icons/md/index";
+import Button from "../shared/Button";
 
 import Info from "../shared/Info";
 
@@ -36,13 +37,9 @@ const Main = ({ onClick }) => {
           border
           hidden={"hidden lg:flex"}
         />
-        <a
-          href="#"
-          type="button"
-          className="hidden rounded-md bg-prColor px-5 py-2.5 text-sm font-medium text-white transition-colors duration-500 hover:bg-scColor focus:outline-none focus:ring-4 focus:ring-orange-300 dark:bg-prColor/80 dark:hover:bg-prColor dark:focus:ring-scColor lg:block"
-        >
-          Make a donation
-        </a>
+        <div className="hidden lg:block">
+          <Button>Make a donation</Button>
+        </div>
         <button
           className="block bg-scColor p-3 text-lg text-white transition-colors duration-500 hover:bg-prColor focus:outline-prColor md:hidden"
           onClick={onClick}

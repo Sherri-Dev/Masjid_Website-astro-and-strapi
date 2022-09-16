@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { FaRegMoon, FaRegSun, FaSun } from "react-icons/fa/index";
+import React from "react";
+import { FaRegMoon, FaRegSun } from "react-icons/fa/index";
 import Info from "../shared/Info";
 
 const NamazTable = ({ showTable }) => {
