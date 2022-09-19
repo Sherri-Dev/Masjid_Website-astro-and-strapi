@@ -1,0 +1,97 @@
+/************* 
+  GLOBAL
+*************/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+:root {
+  --prColor: #ff9822;
+  --scColor: #5d2b00;
+  --controls-color: rgb(29, 29, 29);
+}
+
+html {
+  font-family: Merriweather, serif !important;
+}
+/* Audio Player */
+.rhap_container {
+  gap: 1rem;
+  position: relative;
+}
+.rhap_header {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.rhap_controls-section {
+  flex-direction: column;
+}
+.rhap_main-controls-button {
+  color: var(--scColor) !important;
+}
+.rhap_additional-controls {
+  display: none !important;
+}
+.rhap_progress-indicator,
+.rhap_progress-filled {
+  background-color: var(--scColor) !important;
+}
+.rhap_volume-controls {
+  display: block !important;
+  margin-top: 20px !important;
+  width: 100%;
+}
+.rhap_volume-container {
+  background-color: var(--prColor);
+}
+
+.rhap_volume-bar-area {
+  display: none !important;
+}
+.rhap_volume-button {
+  display: flex;
+  align-items: center;
+  font-size: 38px !important;
+  color: white !important;
+  height: 100% !important;
+  width: 100% !important;
+  margin: auto !important;
+  transition: color 500ms ease-in;
+}
+.rhap_volume-button:hover {
+  color: var(--scColor) / 2 !important;
+}
+@media (min-width: 768px) {
+  .rhap_container {
+    flex-direction: row !important;
+    align-items: center;
+    padding: 25px !important;
+  }
+  .rhap_header,
+  .rhap_volume-button,
+  .rhap_stacked .rhap_controls-section {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .rhap_main {
+    flex-direction: row-reverse !important;
+  }
+  .rhap_controls-section {
+    flex-direction: row !important;
+    margin-right: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    flex: none !important;
+  }
+  .rhap_volume-controls {
+    display: flex !important;
+    margin-top: 0px !important;
+  }
+  .rhap_volume-container {
+    display: block !important;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .rhap_volume-button {
+    padding: 20px !important;
+    font-size: 32px !important;
+  }
+}

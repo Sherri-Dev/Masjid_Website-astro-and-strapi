@@ -3,14 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header';
 import Hero from '../components/slices/Hero';
 import AboutUs from '../components/slices/AboutUs'
+import CustomAudioPlayer from '../components/slices/CustomAudioPlayer'
+import NamazTimings from '../components/slices/NamazTimings'
 ---
 
 <Layout title="Welcome to Astro.">
   <Header client:load/>
   <Hero/>
+  <CustomAudioPlayer client:load/>
   <AboutUs/>
+  <NamazTimings/>
 </Layout>
 
-<style>
-	
-</style>

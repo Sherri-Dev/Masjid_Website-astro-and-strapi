@@ -11,31 +11,40 @@ const Main = ({ onClick }) => {
       <div className="container flex items-center justify-between gap-2 py-3 text-sm ">
         <div className="text-2xl">Logo</div>
         <Info
-          icon={<FaCalendarAlt className="text-scColor lg:text-prColor" />}
+          variant={{
+            name: "secondary",
+
+            border: true,
+          }}
           title="info:"
+          icon={<FaCalendarAlt className="text-scColor lg:text-prColor" />}
           desc="Starting from March 10"
           descColor="text-prColor"
-          border
           hidden={"hidden md:flex"}
         />
         <Info
+          variant={{
+            name: "secondary",
+            border: true,
+          }}
+          title="Call us:"
           icon={
             <MdPhoneInTalk className="text-lg text-scColor lg:text-prColor" />
           }
-          title="Call us:"
-          desc="+(00) 123-345-11"
-          descColor="text-prColor"
-          border
+          desc={"+(00) 123-345-11"}
+          descColor={"text-prColor"}
           hidden={"hidden md:flex"}
         />
         <Info
-          icon={<FaEnvelope />}
+          variant={{
+            name: "secondary",
+            href: "mailto:https://help@example.com",
+            border: true,
+          }}
           title="Email:"
           desc="help@example.com"
-          href="mailto:https://help@example.com"
           descColor="text-prColor"
-          border
-          hidden={"hidden lg:flex"}
+          icon={<FaEnvelope />}
         />
         <div className="hidden lg:block">
           <Button>Make a donation</Button>

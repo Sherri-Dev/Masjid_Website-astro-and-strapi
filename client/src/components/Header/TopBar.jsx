@@ -21,17 +21,27 @@ const TopBar = () => {
       <div className="container flex justify-between gap-4 py-3 text-xs ">
         <div className="hidden items-center gap-6 lg:flex">
           <Info
+            variant={{
+              name: "primary",
+            }}
             icon={<FaRegMap className="text-prColor" />}
             desc={<address>New Orleans, Jamia Mosque</address>}
           />
           <span className="opacity-40">|</span>
           <Info
+            variant={{
+              name: "primary",
+            }}
             icon={<FaRegClock className="text-prColor" />}
             desc={<time>Mon - Sat 8:00 am - 18:00 pm</time>}
           />
         </div>
         <div className="relative flex w-full items-center justify-center gap-6 lg:w-fit lg:justify-start">
           <Info
+            variant={{
+              name: "primary",
+              onClick: () => setShowTable(!showTable),
+            }}
             icon={<FaMosque className="text-xl text-prColor" />}
             desc={
               <>
@@ -43,7 +53,7 @@ const TopBar = () => {
                 )}
               </>
             }
-            onClick={() => setShowTable(!showTable)}
+            descColor="red"
           />
           <NamazTable showTable={showTable} />
           <div className="hidden items-center gap-4 text-xs lg:flex">

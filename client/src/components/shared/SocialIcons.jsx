@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaFacebookF, FaTwitter, FaGooglePlusG } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaGooglePlusG } from "react-icons/fa/index";
 
 const SocialIcons = ({ icons, iconColor, iconHoverColor }) => {
   return (
