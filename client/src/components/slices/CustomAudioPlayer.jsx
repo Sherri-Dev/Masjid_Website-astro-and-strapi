@@ -7,13 +7,12 @@ const CustomAudioPlayer = () => {
   return (
     <Section
       containerClasses={"flex gap-6 flex-col"}
-      paddingAllowed={false}
+      padding="none"
       className="-mt-10"
       title={"Tilawat e Quran Pak"}
     >
       <AudioPlayer
         src="/surah-fateh.mp3"
-        onPlay={(e) => console.log("onPlay")}
         header={
           <Info
             title={"Surah Fateh"}

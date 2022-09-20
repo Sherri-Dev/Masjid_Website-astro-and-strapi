@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCalendarAlt, FaEnvelope, FaListUl } from "react-icons/fa/index";
 import { MdPhoneInTalk } from "react-icons/md/index";
+import Flex from "../../layouts/Flex";
 import Button from "../shared/Button";
 
 import Info from "../shared/Info";
@@ -8,7 +9,7 @@ import Info from "../shared/Info";
 const Main = ({ onClick }) => {
   return (
     <div className="py-4">
-      <div className="container flex items-center justify-between gap-2 py-3 text-sm ">
+      <Flex className="container items-center justify-between gap-2 py-3 text-sm ">
         <div className="text-2xl">Logo</div>
         <Info
           variant={{
@@ -55,7 +56,7 @@ const Main = ({ onClick }) => {
         >
           <FaListUl />
         </button>
-      </div>
+      </Flex>
     </div>
   );
 };

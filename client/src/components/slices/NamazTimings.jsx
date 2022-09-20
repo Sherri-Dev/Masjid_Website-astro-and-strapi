@@ -1,4 +1,5 @@
 import React from "react";
+import Flex from "../../layouts/Flex";
 import Section from "../../layouts/Section";
 import NamazTime from "../global/NamazTime";
 import Heading from "../shared/Heading";
@@ -10,10 +11,9 @@ const NamazTimings = () => {
         title="Namaz Timings"
         subTitle="Associated Mosque"
         id="namaz-timings-heading"
-        className={"text-center"}
-        variant={"shaded"}
+        variant={"centered"}
       />
-      <div className="flex w-full flex-wrap">
+      <Flex>
         <NamazTime
           title={"Fajr"}
           beginTime="4:56 AM"
@@ -44,7 +44,7 @@ const NamazTimings = () => {
           iqamahTime="01:30 PM"
           variant={"colored"}
         />
-      </div>
+      </Flex>
     </Section>
   );
 };

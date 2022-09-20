@@ -4,6 +4,7 @@ import Main from "./Main";
 import TopBar from "./TopBar";
 import SearchBox from "./SearchBox";
 import MobileNavigation from "./MobileNavigation";
+import Flex from "../../layouts/Flex";
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
@@ -12,10 +13,10 @@ const Header = () => {
       <TopBar />
       <Main onClick={() => setMobileMenu(!mobileMenu)} />
       <div className="hidden bg-prColor py-4 md:block">
-        <div className="container relative flex justify-between divide-x-2 divide-white/30">
+        <Flex className="container relative justify-between divide-x-2 divide-white/30">
           <Navigation />
           <SearchBox />
-        </div>
+        </Flex>
       </div>
       {
         <MobileNavigation
