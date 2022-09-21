@@ -11,7 +11,7 @@ const NamazTimings = () => {
         title="Namaz Timings"
         subTitle="Associated Mosque"
         id="namaz-timings-heading"
-        variant={"centered"}
+        alignment={"centered"}
       />
       <Flex>
         <NamazTime

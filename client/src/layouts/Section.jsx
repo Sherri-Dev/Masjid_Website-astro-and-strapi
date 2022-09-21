@@ -38,7 +38,6 @@ const Section = ({
 Section.propTypes = {
   className: PropTypes.string,
   containerClasses: PropTypes.string,
-  paddingAllowed: PropTypes.bool,
   ariaLabelledBy: PropTypes.string,
   title: PropTypes.string,
   variant: PropTypes.oneOf(["contained", "full-width"]),
@@ -48,7 +47,6 @@ Section.propTypes = {
 Section.defaultProps = {
   className: "",
   containerClasses: "",
-  paddingAllowed: true,
   variant: "contained",
   padding: "only-top",
 };

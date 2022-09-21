@@ -9,10 +9,10 @@ const Services = () => {
       <Heading
         title="Our Services"
         subTitle="What We Offer"
-        variant={"centered"}
+        alignment={"centered"}
         id="services-heading"
       />
-      <Flex className={"flex-wrap gap-5 sm:mt-4"}>
+      <Flex className={"flex-wrap justify-between gap-5 sm:mt-4"}>
         <Card1 title="Community Service" />
         <Card1 title="Special Child Care" />
         <Card1 title="Quran Classes" />

@@ -95,3 +95,22 @@ html {
     font-size: 32px !important;
   }
 }
+
+/* Pillar Section */
+.pillar {
+  position: relative;
+}
+.pillar-container + .pillar-container .pillar::before {
+  position: absolute;
+  height: 30px;
+  width: 81px;
+  background: url("/pilr-shp.png") no-repeat;
+  top: 50%;
+  right: 100%;
+  @apply lg:content-[""] xl:content-[none];
+}
+.pillar-container + .pillar-container:nth-child(2n + 1) .pillar::before {
+  transform: rotate(180deg);
+  width: 85px;
+  top: 40%;
+}
