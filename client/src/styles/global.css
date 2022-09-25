@@ -114,3 +114,26 @@ html {
   width: 85px;
   top: 40%;
 }
+
+/* Zoom effect of Card-2 */
+.card-2 > a {
+  position: relative;
+}
+.card-2 > a::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 700ms ease-in;
+}
+.card-2:hover > a::before {
+  opacity: 1;
+}
+.card-2 img {
+  @apply transition-transform duration-700;
+}
+.card-2:hover img {
+  @apply scale-125;
+}

@@ -24,11 +24,13 @@ const NamazTime = ({ title, beginTime, iqamahTime, variant }) => {
         title={"Begins"}
         desc={beginTime}
         descColor={variant === "colored" ? "text-white" : "text-prColor"}
+        titleClasses="text-scColor font-semibold"
       />
       <Info
         title={"Iqamah"}
         desc={iqamahTime}
         descColor={variant === "colored" ? "text-white" : "text-prColor"}
+        titleClasses="text-scColor font-semibold"
       />
     </div>
   );

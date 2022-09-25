@@ -1,5 +1,6 @@
 import React from "react";
 import Flex from "../../layouts/Flex";
+import Grid from "../../layouts/Grid";
 import Section from "../../layouts/Section";
 import Card1 from "../Card/Card1";
 import Heading from "../shared/Heading";
@@ -12,12 +13,12 @@ const Services = () => {
         alignment={"centered"}
         id="services-heading"
       />
-      <Flex className={"flex-wrap justify-between gap-5 sm:mt-4"}>
+      <Grid variant={"four-col"}>
         <Card1 title="Community Service" />
         <Card1 title="Special Child Care" />
         <Card1 title="Quran Classes" />
         <Card1 title="Building Upgrades" />
-      </Flex>
+      </Grid>
     </Section>
   );
 };

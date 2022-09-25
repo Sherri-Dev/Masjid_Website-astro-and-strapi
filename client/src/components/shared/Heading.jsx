@@ -31,7 +31,7 @@ const Heading = ({ children, title, subTitle, id, alignment, theme }) => {
         className="mb-4 inline-block lg:mb-6"
       />
       {children && (
-        <p className="mx-auto max-w-[60ch] text-xs text-gray-500 lg:text-base lg:leading-loose xl:text-xl xl:leading-[2.25]">
+        <p className="mx-auto mb-4 max-w-[60ch] text-xs text-gray-500 lg:mb-6 lg:text-sm lg:leading-loose xl:text-xl xl:leading-[2.25]">
           {children}
         </p>
       )}

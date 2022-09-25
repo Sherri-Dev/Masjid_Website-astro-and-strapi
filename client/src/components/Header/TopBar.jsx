@@ -39,8 +39,11 @@ const TopBar = () => {
         <div className="relative flex w-full items-center justify-center gap-6 lg:w-fit lg:justify-start">
           <Info
             variant={{
-              name: "primary",
-              onClick: () => setShowTable(!showTable),
+              name: "secondary",
+              onClick: () => {
+                setShowTable(!showTable);
+                console.log(2);
+              },
             }}
             icon={<FaMosque className="text-xl text-prColor" />}
             desc={

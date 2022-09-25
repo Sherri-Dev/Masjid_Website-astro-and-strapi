@@ -1,8 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Info = ({ variant, icon, desc, descColor, title, hidden }) => {
-  const { name, onClick, href } = variant;
+const Info = ({
+  variant,
+  icon,
+  desc,
+  descColor,
+  title,
+  titleClasses,
+  hidden,
+}) => {
+  const { name, onClick, href, border } = variant;
 
   return (
     <div
@@ -11,17 +19,20 @@ const Info = ({ variant, icon, desc, descColor, title, hidden }) => {
       {name === "primary" ? (
         <>
           {icon && icon}
-          {title && <span className="font-semibold text-scColor">{title}</span>}
+          {title && <span className={titleClasses}>{title}</span>}
           {desc}
         </>
       ) : name === "secondary" ? (
         <>
           <span
-            className={` ${"rounded-full border-2 border-dotted border-gray-300 p-4"}`}
+            className={` ${
+              border &&
+              "rounded-full border-2 border-dotted border-gray-300 p-4"
+            }`}
           >
             {icon}
           </span>
-          <span className="text-scColor">{title}</span>
+          <span className={titleClasses}>{title}</span>
           {href ? (
             <a
               href={href}
@@ -57,6 +68,7 @@ Info.propTypes = {
   border: PropTypes.bool,
   hidden: PropTypes.string,
   title: PropTypes.string,
+  titleClasses: PropTypes.string,
   desc: PropTypes.node,
   descColor: PropTypes.string.isRequired,
 };
@@ -67,6 +79,7 @@ Info.defaultProps = {
     name: "primary",
   },
   border: false,
+  titleClasses: "text-scColor",
   desc: "I am dummy desc",
   descColor: "text-white",
 };
